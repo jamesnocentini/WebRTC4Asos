@@ -1,19 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<body ng-controller="ItemListCtrl">
+<button ng-click="useResource()">resource request</button>  
+	<ul>
+		<li ng-repeat="item in items">
+			{{item.Description}}
+		</li>
+	</ul>
 
-  <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
@@ -24,5 +25,6 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+  <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
 </body>
 </html>

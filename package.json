@@ -1,0 +1,21 @@
+{
+  "name": "angular-seed",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "web.js",
+  "dependencies": {
+    "node-static": "~0.6.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jamiltz/WebRTC4Asos.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "e589303b9fe6c64d7be757e6375059877b3d1a72"
+}
